@@ -7,7 +7,7 @@ namespace MessengerServer.Data
         private static readonly string DbPath = Path.Combine(
             AppDomain.CurrentDomain.BaseDirectory, "messenger_server.db");
 
-        public static string ConnStr => $"Data Source={DbPath};Pooling=True;Max Pool Size=100;";
+        public static string ConnStr => $"Data Source={DbPath};";
 
         public static void Init()
         {
